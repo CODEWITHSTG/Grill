@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>STG Grill</title>
+  <meta name="title" content="Grill - Amazing & Delicious Food">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD-2r86f5cWSWVWqyJ9Dt1LOm4k4k9pGqP4w&s" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="https://i.ytimg.com/vi/kMzik91at4A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBUYGt-00uoZQ2ixyzR7KCi--IAVw">
+  <link rel="preload" as="image" href="https://www.thestar.co.uk/webimg/b25lY21zOjRiMjQ2NmY0LWMzNjgtNDQ2Yi04YTQyLWMwYzkyY2Q0ZDk2NDoxOGE5ZTQ3MS01MzQzLTQ0NGYtODljNS0wZDBkN2ZlNTdkYTI=.jpg?crop=3:2&trim=&width=640">
+  <link rel="preload" as="image" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSExMWFhUWFhUYFhgYFRgXFxUXGBcXFxcVFxcYHSggGholGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGzElICUtLS8tLS0tLS0tLS0tLS0tLy0tLS01LS0tLS0tLS0tLS0tLS0tLTUtLS0tLy0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYBBwj/xAA9EAABAwIFAQYDBQYGAwEAAAABAAIRAyEEBRIxQVEGEyJhcYEykaFCscHh8BQjM1Jy0QcVYoKS8SRDshb/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMEAAX/xAAwEQACAgEDAwIDCAIDAAAAAAAAAQIRAwQSIRMxQSJRFGFxBTKBkaGxwfBCUiPR4f/aAAwDAQACEQMRAD8A8TATwFwBPagMdDU4NXWhSNCA1HGtUrWpAJ4CAaEApGrgCeGoBOgpwSDVKymuCJrVay1+mo09FE1qmwmGdUeGM3K5HM3mW9p4sVcp9rqYuTCzT+y9ZjdU8LP4xpILQb8oyxRaFUmejYnt7RDbGfRYTOu09TFOI2ZO3X1VE9na5ZqBH9JMH8lRwtItMOEEGCDwVNYox5H3Nl8LhTmrhTnEUpal1yjIXUdY+VyyaAnBq44QakWpwaukIHEDmpsKR4UZRANLVG5qmUmHwr6h0saSfJccUO7JMC5KOZf2Uc8S63ktL2c7JlnjqRq+5XM3zCnhgZInos2TM26gUjj8s88xGV91VLDfoq+a6mRGxU1bMjUr947YmPRHsVl7a1IjncHzVbaa3E6TToyWHxE2O65jcN9oe6Y2gW1NJEEG60WLwn7knyTye1oRK0ZCF1dISVBR4TgFwBSNagE61TNUbQpWhBjIcApAEwBSNCAw4BPC40KRrUAnWlStKj0roCASYI72cpvpVRUcwhsRJCJ9gcgFR3fVBYfCD9632YZazQRA2VFEnKXgA4vNqbWFxcIheV4jNG98XDYun6q12ow7xUIaTp6SYQGjhXvdAF/uXNs5I9Kw2Y03N1BwgjkgR6yszmFZj6rnN2t7wIlD6GU1onjrBTv8rxAPwkjqgxkX205CiexTUqVSn8YUjxyp2UqyiWrmlWXBMTJgojDE8MTl0BcAaWJj2qYNVzCZRXqu0spPJmD4SAD5k2CAQQ5qj0rd5V2Npkf+RV0uk+FkGI6khV8DkGGbUf3pe9g/hj4SfN0KEtXij3kUWmyS7Ix1OkSYAklehdkMt7imXPA1G/5KbJMJg6VUAUiS4xLyDpHkr2cZjSZUAEFoH2dwfM7LNk1kJL0vgrHSTT5Rlu0naWow6GWP3LD42s+odTySVuK+Aw1UOqVDU7wnZuwHqpcD2Owjw15rktO7JDSD67q2HPiS4fIk8GXyjzN7VoezuZf+txuNvMK9jOytM1HNp1/DqgSwn6g3UdXsVVpvg1qbCLy6xjrCtLLjkqsisWSL7DO0eW6gKzPiG/mFKw6qP+38FFmbajWkB7HkC+kkfKd1awDZo3EGLoRdo5xpmDeLn1KSfXEOPqUlqM45rVM1qa0KVoSjIQanhqQUjQuGOBqlYxcDVIwIBQ9rFIGrjSnJWOhwYuFqe1TUcMahDG7lcgs9I7OY5lOmLjZdzztK3+G078rJ1spxFKnIdMDZZjAGrXqmZJBiOisQo1uLoMc0nk3QHDFjKpB2Ij6rQf5RWcyAIQfE9k8TMi/zCSeSKHSNnllGmW8Hp0Tcb3bDNo291jaONr4bw1GkDrwhucZu6paTCG5NBoOZpi2gHbYj+yH4d0hZ/Dkl1zK0OFFkjHiOc1RlqsFHcm7Nmtpc92hpNxHijr7pZTjHuOoOXYz2HwznuaxolzjAC0b+xVRoYXVaY1GDM29Ov0W0wnZGhSIfTDg4ckz8uimo5U3UCZLpsTew9dlDLmmnUUVx4oNXJgDJOy1Ok7vZNRwHh2ADv5iESrVANQe2XajAmGgzBJ67IuaUNe6m6fEG6QJlwdB09DM/JZjH5iXyQ0Na2WxuZncnrdebq55IxTb5/Q3aeEW2org7Twb6nhDQY9gAo6tFkMc6gQx0+IVJcbEiAeLT7JtDGOaDpcRqF4/H6qF9UvIYXHS3Yb+w6Lzsc4x79zXKMn9Cf9p1RSa0inqmAwd4R5mfJVM2wDg3WWODNUDV8RtNx81I/vGEljo1CCYG3vsuCnUc3xVC4SXAE2k8weVVTTjb7+OO3/gNjT47ANkSRtHldJjgDcIjUwhcRYT1ThlYgungxa65STC6GMzei+XVWjW2GsYwadQsASf1yheIphxJIMne5PtJ3V2phqDhT0giqLVd/n036JFku0gcK+STtJGdRVWCMXUfpDWuGloMDSPv3VbD5hAIcCT1HKNV8AZmDKp18ENwPzKvizOJDJiTMZicnrFxIYYJkLqP12VdR8Z+ZXV6K1Zh+FMqxShMYFKAtpkQ5oUrAmsUzAlHQ9jVIGLjApQgMcDE4U1IwKdjErYyRWDUd7HMBxLZ6H8EO7tGOyLP/JHoUYP1HTXB6FjcMC0jyQHs32eawudFy4lallOVLhaMBDUSfCRCJynhB0UrcGOikCmprM+RwJm+Q06rSC0LxrtbkrsM+Psnby8l9DObIWH/AMQcmFWg61wJHqE0XsfyDZ4vgd1oqAsFnsuHiW+7Gae/EtDvCY/0nqrze1WPjTlwGuyPZtrmitVY4kHwsje8CR/dejNwDWiWtDdpMXJ6IXiKlPDU9WsMbYlzjz0A5KC4jt7RaHta5zzHhcW6Wz1QjD/YMpf6mnxeYU26gCNQG2yDYzGA1nEEFraZgzA5nbe8LKMx7XeN7wbmSXCJ63VHHZ/TYyo0VGCRHJ2PEbf9KGVSfDNmKEI8pmrwGOfSo0w09XEzJ1F3iBJ5j70IrlhLv9T5idiW7/NZhnbGmKQaXgkEnn2mAqtTtLTs/VeZ63iCY44Uul6afj5FVlgnarn5m0rMbxaR+hCoF0iALg9VlP8A9WC4ESbyTBM9Yjm30RChnBeJZSEutJdE7wY02lJlxxS5X6Dwzx9zQvru3P64Sw1ewaBLhuTz5wgmKNdzCG6RbxyTbYQLDdVsHia9PiQehmPXk79FjUIuPcq88bpGlrVAXNAFv1b6KzSqtIAaDY38rXkLKvzVzCNbS2b3tPofwVlmct3HPP0uk6ckuYj7ovswtgMU3vXFw8Rs315J80Xw1Bn8Q6fIC6xNXNRMWmb7Ta24sVdw+Z2HiiJkHn3VYenhoSXK4Zo6uGe47+EX9AUAzLDlpI1SAeOCmnPS02Mj7wuDNmm07mY5BV4qEyDbQFqU3zsfokp8VBe46hcpJumie4wzVIHJNYpGsXq2eVRxr1MyquCkpG0ErYyTHtqp4rJraKeKKFjUx9OurNPEKr3K6GIMKsIjEBHuxzgcR7LJgLUdg2nvyfJdBeoMnwep4cWTXVFxhshmNxQYN1DUzphw4r7hhrhuSon5oxtpCw+adoDENKB/5s7cuUer7F+ivJ6dVzc/ZuqWLxneNLevVYvJu0X7wNebHYrU4rbW33XO6s5Qj2MFnvZY0yalMckkD6oj2Oe2mypiHkANEAnYnotdhXNqtLSsf20wDqVEMYPAak26nYKvUuPJ2PGlMB5/2ifXqEudLRZo6DyQetmrANOmfW6LUOx9Yia/7kGIn4vcfmmM7KMIkvv1PPtKXq4rqUhbTfpoB4TFmo7T4WTyf7nZF6OVULd7iGE9NYJ+QlWn5Bhmmm01Haqjg1vhhskgXcOLonieyQpB5c2nSpgQXue/V9DF+lkJ5I1uVpfSv3M+RfMA4ipgKciS89GtP0cYCWEy2nX/AIdN4vc6NYAiTcGxjyMbrlDKcMare7qGoNYBYSKZcNzpLrG3uvRnY+mcLVoYai5uoaQ4llvEe8JOqdtI9vRUxPE/L/EOGEPKt/sZOrk+Dw5FWjW1vc0tayo5kDWB4pYLWncc8IlhsM2jTpzIcC5zyBPoQRJIhDqmV4drdGp2qN9Oq/tsqNfLnS8atQ0WMu+PiQU0sWGS++el0tP/AIsLOzWm+R3jTJB2g2kDjzTDjaLHDW61p03t931UOUUu4bBcWuLT3ha2SNUgDz8MeVynZL2YqVTqFIvpk/EW6Tz1ieLiV5y02NyfqA4RQ7N6dLEEikCWm7WmNQkXsFj8NkjzUNPZ0mATBsvRMXlDaFAOOHeHMu98AAHmNLiT8h6rP51j3lja5lrdRDDDQ50c6TJAFxE9Fpx+h0nafsReFPlA12QPY4ankE8glEc3ymrhmMh7Xh7Zu24ja4O6EOz15LS5rngcmxPsLdPkjWOxrqkNLpaNjpIA6ja/NyjO0+fwJxjP/EyDs0qMcWk3HkpRm5sSN/aU/G0aTqhe/bYAy2YtuLAbKfC5W2q1ztTHkNsxrvhMW1GJ+StWOk2iTy5IfeZJSzxgEaZXVnThXi23kdwkj8PAPxEvYuscrFMqq0KwxaCKLTCpmEKo1TNStDJlxpCkaQosLh3vMNaStJlfZKo+C8wOgSNpdyi5AQANgJRHBZDVqbNgea32WdmaVMfCEap4djdgpPJ7DqJjMu7GNF33R7CZayifCAEVqVIFksPhC65WeeR2VUEkUcbmIYFjs0zBzyb2Ws7QYIaSeizOVZM+uSSPDx5qLybrbLKCXYzeLrcc8K5U7M1u71k3iYWjzTs3o0vDZ0kGEQo4s1W6ACODI+iHVulBDdNd5MxXZ/szUrPl4hgPz/JegmgGNDD0VzDMawQhPaPFaRI3Wu7Rlrngky/CkPJG3ClzktFMvcAdEOE9RsVJl1X92CeiG5w92IbUw1JsvLQWgmNRnYFI0q233C47kZSnnlbFPrd5enTbLRyHOdv5myjxNZwY12hwaQ4tLoh0WsNxed4W37NdiKFGnqxJOow5wDiACLwXbm6Wb5jQI7mixgDYkwD8ieU+XCm9z/ApixdWdRXC/JAr/DvBOrVHVqjSAyYa4QS92zwY2iw6IT22o18RiajKY8DAGtEgAkEFxIJvLgd+g6L0XIMG5tIfzVTqJ6MbcD3glZd+dYKg4uce9e6ajmsZrdTB8UPOzbHkoTjKO1L6sxZZNZ2oc1wed4nB1aL9RYS4ANEXJad7NJj81ypnVemwxQfECS5rm8kdL2O8o1nH+IdV0NosFIEHUWEOdJiIL2gCLzA6QQs5gc5qGqHaqjifiLqhqF3sefT8FSpONySbCseZv7pLluNxFd4DKQFiBJc1g0tJMu4PG25G0ong31QSazIDYJAuBPJmBuQI2n5I1llBga95Gl9YCd4AGzQDYiQDtz6KlSzalTqHvGB5bIF5DRO1/NY56hW1CPb+/Q9PT6NNJz7h7sdkrcRVq1awJpNMNYT8TyJl4H2Q02H3wj2aZ41h7ulvsIAgcbLG5j2kaWfu67r/ABMJJ6mR03PrJQunnml2ptz6WUJZMsoVCNG3DoI790ufZG3xObEsJcfBpAdJttDvJYDtRntB40NBIaZBiGgyZ083kqvjsW+sSXuMTZoJDR09T6occnY689bF8+8GU2m06jLfkk7+RfPpsu3/AI4pfVgjE5g5xBFo85n1Un7YCLHSeRBh20yZ2tttcrSv7EOAa4NJDgC3xTO1piCgOLYWGIETsQLe69XdHhJHivS5UnKTT+hSLZeLQJG06faVosLmFPDUwftVBrPJM3AnyFkMo45hGhwuefzT6mbOaO7LQItBA46oT3SSVGWeGLVWV61UVHF+rTqMxIt8ykkMQw3LKfyCSpuE6L90FG5eAJO6qVWAFHKosqDsIN1OGW+5GLKjArWEpguAOxKdSwDnGwV5uTuFzKZ5Y9rHtHonZ3LqTWCAFomMA2WQ7MF7GgOJK1TaqjOS7loPdwiSo9V31iFOKrQmMh7rbLzcmot1E3QxNK2S4CiXXKJERYKMGBASL43VE9sa8kZepgvOKZcIVjLXMY0AcKpmuOaLTdU8DRebk26LJGc3lqHJp2R6dy4D1R7X2OyEY6oyn8MKWo4gLK5njfFEr044tvL7mTcnwuwSdmBKDZhiTVcG+d1HXxmhqqZbUJJcVVRFbNXgnAgMO259lFmNVraTdMtqOJeXDdrQYDQeLX91Dga0GSfVdhr6vULz9Vl2yUVy/wC+Sb1LxZI124dEWPzqroDCzU6o1wZ6x8R9pNlLlvZUhrNVQlzh3kgQ2LS3WZkj0/BMfiaTXE62trN2kE6KZN3gGROkG8cxylkWa1qOLfUa6o+gNJOth8ToDCWNDbWNjGw91rjiySxqUnz8vH/bo3L7SltqCUf59voazA4h8RNm6WiNwIgLIYXse2o6s/Q3Qx7/AIiTN5IaNo2WvqYppJqMPxB5NhGok6Y6gED6oLWxwoNe9zgNQIMmBJIM+vHuvJnrd0Vjk22rXH5r+BMWCUJylHhP+v8AkFtyKg10NZTMb6WtifMhOr5FQ1ahTbvIsJHS8Kjhu02GaN3k32bZ25Ib6dVUf2uqE2pjSD4fECetzEcbSoLTaqUntv8Av5GvrY48thTFZW0tnW9mkACDIAGwgyOPosziuzR1F7KrSSSfEI9eo+ibjcdUxDn947w3OkWbzvBk9SdhCHvwdJoabtBMTqFi2Cb7ixI33joSvXwaLURXqyfh3EX2io/dRawnZmrUgNdRJA4qNk+qWOyGtSMPDQTsA9pPyBlVWBmvUwPEEkPabuaBPid6m5AIH3qpXfXJZUc4yCWgOaQXEWkHzhvW4HktDwSv736FYfa80vur9SpXeGWJv0FzPn0436p1DFfEGUnOOkElxDdIkSRBt0vxKYxjNIplscEggze8uggAXM7W4hWsRhnNplga4v0gtIMAtjX4iLQB5/RVjhj5JZftbPLtS+iD2K7b1KzS17YbpkBoZZwgAy4TqnkGd1m62Oa8D9zTcPtadweQS65It803DPkMD3NDQTAE+J38pc3dsAW9L9H44NLWTSeKlzHhI0CdTg0g7wZI6XlU6UZd/wBzznqJpUuBxyfDVRLQAYnczHXdUsdkYtDjO0m4I4B8wo8PiW0+7dcTMnqAbjzOys43O6bnkN/hk7ncT1hQUcsJ0m2ikcmOS9SAtTJ6gPB+f9klpMHnNLQA54BEg2nYmDbqL+66i8udcbRelj9y3iKXCbh8KSd1SOO1FF8HSqkSGGEtOKMMYt9gvgsO1t4VwvYChtFlU20qyzLKx4XmSwvqb9wywTYawDwdledRfG6z2A10nw4haai/Vyp6jUTXCPT0+kUfU2VjT6lFcrw7hc7J2EpUweJVl9YD0UtNhcXvlKzRmy2tqRJisSGhUZNRpIKB5zmbrhtwESybFhzN1pxvq5HfYjKPThfkyuY13U6wDriVYznOXMa3Q4BFM/yzWNQ3C84zrEuDtJWrT4djpCZMu5cmjf2jqPZuFnquPOuSVVpYkBu6oVHFzp4WxJtmdyoPVcRrhX8I8NF1naFcBH8imq9rA2QSL9EMtqPBOUqVmhwzSG3om5+OCePkFXz5jaWCc9tQa9cPaDdoJOknoIH1R/H4J1B0moSwNFhtPQjjhed9oKpfW1QYdAc3hwBmD1XjY05Z/wDkXNc/Uw36rYQzTNXgNDW+JlNpbUgXL/FsfiAAgA9fJB62cvJOgQ9wMvbUPI2sJAmSR6rW/wCWYY4fXrLGgE6AR3YkAufETNiFk6+U0nUw+hVDXOmNZI1CS0gyJAmb+S9iOf1c9v2LrJyWqXaGo06KdeASQZhwGkcFzbExxaTPKB18a6q+a1Rz/wDdcRe3A9LKvi8qxFNslrTe5BDh90z8lVd3+qG03SOYMH8E8IYnJzilfvx+5Trtxq+DSftepmwgNHBaSb3kc73Pv5Zt2KeKsBz41WBJBI6G+yIZfkmLqNJc2GnaeZ6AcKPE5NWa8EmSCLFpubb3uLeSKzY02nJCSzIOmo2mXh5GoDUyXbwIAB02EF3hIv7XZXxtMkPDWQXeUkA7PkECzWgQPMyqbsP+2GaZBq0/C9gMagPtsncTI/7VLC4N8v1kMYCQ5zt2uF9IG+q2wFrpYZbj6+67ghmtc9wk3EM1u03aQ4N8MCCZDSNnbgSf5Z6KjWwFNri4kwQbh0eImCA0gkAef0Vj/Kfi016Z6SXCTxI0G8HfzQ7MKdWk0awLmzmua4G3MXHvCeOVOVJopvg13DGDp+AValSNwGiXao3cQ2I43N/RRYHEPqCppcdbGuLRu5zNOgtaQRYC0Ryg1PMIBA5lR0e+DTVpkthzWki0kgmY54+a57ueaBkyKuAkM3oQ06PEAZg6Rqm3iEnquYupUqwRJaIaS6QS4SS0arzHToJ2CvmmAxhPduqaQSXNYHTHnt6IrgKLnfxajAN7N69fFe6zT1ajzX9/Im8/ijEZ5iHF83JIBuACABGwsdt4E3MBBmSt1mVWgHm2o6XM8NvC6x8pvusri8BF2GRMQYkdD5rZi1CmuVQm+2QNr+QKSmblb4+Jn/JJPvh7lOp8ze9n8iDqku2C3tVtOmywGyy2ExBbspatR7uVi1OCc5cdjRp8sYRLbO0lKmYcI9kcy/MG126qYseYWPrZZr3C0WSYhtGmG9AsuXTVE0Y86bIc4yWpUMh2n0V3K8uLG+N5PuiGHx9Nw8RCA9oc7AOileNys0NM5+jx8zQ8/kP08RTp3Q7Ms5F4sFkqudu2Mhc/bg7mVrX2dJKr4JfFxvsEHZqNuFFgc17qqI+E/RDcSwOOkGD5CUPGX1C6DVOnm11ox6NQJ5NRu4o9WpY6m5slw+axPbfB0XDU1w1eqFHK2mwxDo8zCaOz7Zu/UOupWWFJ3ZDc/YzlDDOm7gpKlOLAo5UyRjbwYnqmnB0Rwq2haYADy0gxMHYixXpfZPMmGl37mhpYHHQOXCwgLLgUv5QrmGc3drY9LLJqcSyU+zTsWWHf5CGH7UVK5FIUnvc6oNZmGgF0GTFh/ZWc97OuZNRt6ZJi9wW/ePPyUeX1mhpYWWJ4j3lX61UuaWkkiCBfra3zWGcfW47a9nd2RnhlupIAVcGTRa8zpd02jzCt5Jg6YBaRphl4tNxaehE+0q1VxYawNLYA6C0Kq7GsPwOInf8AEehuPddkhNY6ib3j243CC5ogZ3ms6G6tZ2FwACQQOAIi60mS5UHPhzGRAk6Qb8xxab+yA4yrxTc5s7jVE+vVabJsww9KkZqiQL38XnAO8n8EmOpNbl9TDkxy4uNV3+ZUz1gFXTqLWgAuPSZ6e1isfVrgEzibSbEBxjaLXB2R3NM8olzmtu0wXOglzzHwxwAg+Ow+Hqy8PDXEuAOwc5oFnDgQRdNBRjJ7lwyccTv1J/kZehgpqaw57XaiQ5tjHtyj9FlQsEkVCHOdDm72aGyRHR3zVak4MOo7CJ+f/S0WFqBwGw2vH3BXzZlXKs9XHpsb7oo16Gtv7ykAY8LmwD/SIG3khmaVQW9yGsa2QSTJc4jYEmw3n2WlrV2tABvuB6mN0Ex2GB369PqoYsiuw5dFjr0rkiyvKGOvqYNuE/M61IA4d9NzWtIdOmdRjktNjeR5W3CHPpabgkQeCf0U92b1ZDHuLweDBcB/dV2zk913+h5+TTTiQYc4VztOstEkAk3J6EFFK+WkDTTeb8bKrjso01GVWFrvtXFhAkGLX2UGGxlXWKhcdhIk8cgbD2TNOXMH+fuTjhclaIK+UVB9kzzYqKhhmtJ7wi7TA9RAIRbtXj3Op94w6Rs5oEyZ3J4ET62WawVaQQ1xafqFeCnKFsnXFh2hUYxoaGTA30G/nskqIzl4tMx5wkjsfsE0lKqr1Koeiq03tVqlUC3toNMuUqjldpUp4Q2k5/EK3SqvnlK9rGVl1uCb6LOY1jWPcFoHvcR0VTEYQvsQD6qe1eCsZtdwG+m13RMZgWk7qfH5BWddkD3QwZfj6Z+EEdVyi12ZTqxfdFihhCHG/Vd/eCeVRGOxDD46L4HIEqWln1LkFp8wQmuSOuEmXBLhdv4LjsINocD6qfCZhTcRDh81eq1WEzuSg8r8oZY4+ATUBAAFVw8iJH0Tm5hUFyKb9hBb7DopMeQPJDKtST7hPGSfgSUGvJfqYhhPjwxHmwmFHVq0fsd4zpqg/cmYQtMjVDuJsPZSOqEEAk+9wmpMT1ImZXIjRUYfUke11IcXiI1aQ4dQ4H1VdtNn+n5R90KWphpZ9qJJABJbfcjdTcIjqU0VjmlS+pjvkg2NzOLtaWn5I3Swk7Pc09b/AIRx9yRy2qLB4J84tzyHLunFBc5MB4btQ8CHt1DryFP/AJ/SdzHkbKzicrqcsYf9oHTpCH4rK7AGkRa5Bd+LSllghLujllmvI5ua0ti4AHlXcU+hY0iSDvqc0+4IWbr5W0b6heLgfXY/RQ1cse3Yn6hL8LDwd15+TU0q7WzDrdCZPP0T25vGwM+XHl6LIuw9cQdR8rj7t0z98OPolejiwrUyRuBnA5kfQqN2OFSYdHPqsT+1VR09wFz9qqDjf1SfART4H+MZt8Vmz3U+5/d6bCQwA25nr5oJWI1QHQXWn+yBnG1OiidiXnhVWnaJvOmbFuNLWljiCCIF+gjjZD62JABuPnHyWd/aHm0H23TDVcujpaEWVRul3DmZVzUY0NdIa3xNBvPBI5CHUWAAmYPRUw9wuDHpZcJPJKtHFtVEr4ouuc3+c/IpKjKSbYDg37NHD/dXKQ6PQBjz+irlKs7r9U2xk96NHh3Ni7lep7TqHzWYp4gjk/OVfo447AJXAKkzS4eIkvBVljuAAVm6eZEHYfVStzX/AEAqTxNlFIPisRbT+vmkcTxpglBaeYT/AOsD2/NWcLjtLpLXH/aefNL068HbgviK4DY0t+W6HvwVN+9Np9gp8diLBwDhNrT9VSONjj52/AFGK+QWV8X2Swrr6NJ8rfcocP2EaQSyvUb0vI+qvtx3l9Z+9WsNjdI1734In5RCokwXRmcRkOLHhFRjwP5mwfohlXLMW0/wg7nwuB+hW8xOascfgd6wLfLdcFZpnTPu380aoO9nntapUAOuk4eeg/gqjcc0GS757r0s1+sf8Vx1Kk+z6bXe0H3RBvZ50zHAn4jx7okMeXAeM2sIWnrdl8LUuKAaeoMe/huqFfsXSHw1KlM/1avo4FBpMaORoGYasQQdVh0PJ2/FXKeJYYl1zvtYc7BQVOzVdp8GIaRt4mG48yD+CpuyzFsOrQx/9D4+jgEriWWVBahiWT4S4ngG0xzO3srRqzJ0iLyLE+hPG5t5LPOrYilLn4eoOnhDoB/plOp5+wCHS22zhpv7pXuHUoMJ5hAdGlt+Pa6G18LSM+AW5HH6lW3ZpTeZDgbdZCcTTNrcbc9UFla7o7pxYMOUMIsXDVHPHvwoXdnHSAypPraPuRJ9NoNnQB043567BRCu9pkPggRv/dN1LB0kC6uRVhfWPT8jKpYvK6jCQ4MPmAI+4XWkfmBIl2k28gbeY+S7VzOmSJaRbrPFt028R40ZRuWudJNORBnTIjzm6q1cFyP1+rLQYrFtcSTud9uvkqL3svEhOmTcAMaB63/X5qPuTG36+5FgATeCPRMqYYDr5X2uu3A2Ak4c9UjSHLvoVaxLCwWcqgDiiLRGdPQ/L80lJ3BSRtHbWE21SpmYhJJMSJm4kqxTrFJJAJcw9Q9SiVKsNpKSSBxaZW9fmrdKs7eUklxwTy+tqJaen65UuJDacEgn3j2KSSUJRfjY+ABs+66187x8kklwWSMoDp9SFJ+znz/5R/2UkkaFs4aPkfmCmho6E+4SSQo5NnGiNpVptcixGr1P3JJINDIZ3o5aR6FcAEGAfWbj5pJIIYiLnO5P0TTSJHB9dvWF1JEBQqdm6LzL6VMHmBB+bYKo4nslSHwF7b8VHH/6lJJCwlGp2dqj4K5H9TQZ+RCqYjJ8Y0SDTeP6iD9R+KSSLCpME4rEVadn0492kfQqkczBXUkUkc5sa/FBMGISSTUDcxd+pv2mwukklaGTZTx9Qm6ha+F1JHwBdx3ehJJJCg2f/9k=">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">STG Grill</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Restaurant St, Delicious City, Lagos 9578, Nigeria
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 8.00 am to 10.00 pm</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+234 90 299 59860</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@restaurant.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="https://img.freepik.com/premium-vector/stg-logo-stg-letter-stg-letter-logo-design-initials-stg-logo-linked-with-circle-uppercase-monogram-logo-stg-typography-technology-business-real-estate-brand_229120-77797.jpg" width="160" height="50" alt=" STG Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="https://grillisgourmetdeli.com/wp-content/uploads/Logo.jpg" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Restaurant St, Delicious City, <br>
+            Lagos 9578, Nigeria
+          </address>
+
+          <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+
+          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@grilli.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+            +88-123-123456
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="https://images.deliveryhero.io/image/fd-po/LH/x8sh-listing.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br>
+              delicious food
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="https://i.ytimg.com/vi/kMzik91at4A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBUYGt-00uoZQ2ixyzR7KCi--IAVw" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="https://imageproxy.wolt.com/venue/6661d54988d581581d05ace6/81dabd26-27e8-11ef-9134-de92b1513d8c_6661d54988d581581d05ace6_menu" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="https://www.miesjagrilli.fi/wp-content/uploads/2019/08/IMG_6098.jpg" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+          <p class="section-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
+            standard dummy text ever.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/43878279.jpg?k=b853290d213639bdc160a78bd96bce4ff4867c592d5aa75f920aac01ddadb124&o=&hp=1" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Breakfast</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2008/10/28/0/southeastasian_grilledpor_s4x3.jpg.rend.hgtvcom.616.462.suffix/1392775245255.jpeg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Appetizers</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUiVawubwMrlJlqtBV69Kg4qY15OTuXSig6U72ztaaCKby7tgtjRtyO1AXt2r42AILE-c&usqp=CAU" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Drinks</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="https://www.miesjagrilli.fi/wp-content/uploads/2019/08/IMG_6098.jpg" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="https://www.shutterstock.com/shutterstock/videos/1090179519/thumb/8.jpg?ip=x480" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">Every Fla vor Tells a Story</h2>
+
+            <p class="section-text">
+              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
+              industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book It has survived not only five centuries, but also the leap into.
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1687527197/a7c3525624b345697bfdfadbc9fc7791.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1693207813/b0206d16c650990f11e1b0a815989957.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1698681279/92d9149ea98ae08a5cb41997ca74f667.webp" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+          <img src="https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1687527197/a7c3525624b345697bfdfadbc9fc7791.jpg" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="https://images.squarespace-cdn.com/content/v1/6331f7d34d2ed57aa5ae0afd/c3a10ebc-8495-42c1-ac4f-5e286dd486d2/lobster+ravioli+AS.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="https://www.stonewallkitchen.com/dw/image/v2/BGFW_PRD/on/demandware.static/-/Sites-swk-recipes/default/dw28f7b901/images/lobstertortsalad.jpg?sw=1000&sh=1000&sm=fit" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">Special Dish</p>
+
+            <h2 class="headline-1 section-title">Lobster Tortellini</h2>
+
+            <p class="section-text">
+              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
+              industrys standard dummy text ever since the when an unknown printer took a galley of type.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">$40.00</del>
+
+              <span class="span body-1">$20.00</span>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="https://www.dontgobaconmyheart.co.uk/wp-content/uploads/2023/06/panzanella-tortellini-pasta-salad-744x919.jpg" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ4sRDlc71jApvTinBajHK1pHSApD953N1ww&s" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Special Selection</p>
+
+          <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="https://www.kitchensanctuary.com/wp-content/uploads/2020/10/Lasagne-square-FS-79.jpg" width="100" height="100" loading="lazy" alt="Greek Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Greek Salad</a>
+                    </h3>
+
+                    <span class="badge label-1">Seasonal</span>
+
+                    <span class="span title-2">$25.50</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="https://www.recipetineats.com/tachyon/2017/05/Lasagne-recipe-3-main-square.jpg?resize=500%2C500" width="100" height="100" loading="lazy" alt="Lasagne"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Lasagne</a>
+                    </h3>
+
+                    <span class="span title-2">$40.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="https://cdn.mos.cms.futurecdn.net/rpdq97xgskid5Dnzpiipd7.jpg" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Butternut Pumpkin</a>
+                    </h3>
+
+                    <span class="span title-2">$10.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/88/1e/c5/sho-course.jpg?w=1100&h=-1&s=1" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Tokusen Wagyu</a>
+                    </h3>
+
+                    <span class="badge label-1">New</span>
+
+                    <span class="span title-2">$39.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSbX3KsxcL7yP2eaeVFcYAqJLc7vMeygTN_w&s" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Olivas Rellenas</a>
+                    </h3>
+
+                    <span class="span title-2">$25.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-p/1d/16/b3/67/caption.jpg" width="100" height="100" loading="lazy" alt="Opu Fish"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Opu Fish</a>
+                    </h3>
+
+                    <span class="span title-2">$49.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">View All Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View All Menu</span>
+          </a>
+
+          <img src="https://imageproxy.wolt.com/venue/6476f5cd952015295c0dc67c/9a6a4d72-5d0c-11ee-af00-dee17de1cd87_closeup3.jpg" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="https://www.foodnetwork.com/content/dam/images/food/video/0/01/013/0131/0131519.jpg" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('https://ipswichclambake.com/wp-content/uploads/2020/11/Menu-Slide-4.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            I wanted to thank you for inviting me down for that amazing dinner the other night. The food was
+            extraordinary.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="https://blog.ecenglish.com/en/school-locations/blog/ec/wp-content/uploads/2021/05/11009182_847705801951777_6738010706739095296_n.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
+              class="img">
+
+            <p class="label-2 profile-name">Sarah Jhonson</p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+
+              <p class="form-text text-center">
+                Booking request <a href="tel:+9029959860" class="link">+90-299-59860</a>
+                or fill out the order form
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 Person</option>
+                    <option value="2-person">2 Person</option>
+                    <option value="3-person">3 Person</option>
+                    <option value="4-person">4 Person</option>
+                    <option value="5-person">5 Person</option>
+                    <option value="6-person">6 Person</option>
+                    <option value="7-person">7 Person</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="08:00am">08 : 00 am</option>
+                    <option value="09:00am">09 : 00 am</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Book A Table</span>
+
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('https://ipswichclambake.com/wp-content/uploads/2020/11/Menu-Slide-7.jpg')">
+
+              <h2 class="headline-1 text-center">Contact Us</h2>
+
+              <p class="contact-label">Booking Request</p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+90-299-59860</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Location</p>
+
+              <address class="body-4">
+                Restaurant St, Delicious City, <br>
+                Lagos 9578, Nigeria
+              </address>
+
+              <p class="contact-label">Lunch Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                11.00 am - 2.30pm
+              </p>
+
+              <p class="contact-label">Dinner Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                05.00 pm - 10.00pm
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="https://ffservices.co.in/images/blog/importance-of-food.webp" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="https://images.squarespace-cdn.com/content/v1/5afff457b98a78dfe64c781a/5bb5fc9c-8126-4ce6-ad52-8c3852fa79b9/2.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="https://png.pngtree.com/thumb_back/fw800/background/20220331/pngtree-a-skilled-chef-in-a-highend-restaurants-professional-kitchen-creating-mouthwatering-dishes-photo-image_45011512.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/6627cba1e7f68af7ee47653b_People%20eating%20a%20meal%20around%20a%20table.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="https://buonaforchettasd.com/wp-content/uploads/2023/10/ENCINTAS-3.6.21-3.jpg" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="https://buonaforchettasd.com/wp-content/uploads/2023/10/341764876_604390641615284_8203302324615538885_n.jpg" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <section class="section event bg-black-10" aria-label="event">
+        <div class="container">
+
+          <p class="section-subtitle label-2 text-center">Recent Updates</p>
+
+          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="https://buonaforchettasd.com/wp-content/uploads/2023/10/341764876_604390641615284_8203302324615538885_n.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="https://cdn.prod.website-files.com/60414b21f1ffcdbb0d5ad688/6604514616607b11b582c41d_mzcCUuTStobilPQoIVu07J-u0g8K_2VfDRi3fJLvWsRtnF7tKixNfcByIWwh-hsRgm8TPrWyBUhYAQgCQ37BoVcgOliP5NxklziAyw-B8fbn4QdmQmSVk5pBXoXjhMIK5CHwUqKdSyzep8kmjvuz6eQ.jpeg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="https://cdn.prod.website-files.com/5a6f337e3f25150001fa6f79/63222947aad97c19638e5cbf_620448c6283ff3b20f5e169a_Blog%2520Thumbnail_2200x1457%2520(63).jpeg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Recipie</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">View Our Blog</span>
+
+            <span class="text text-2" aria-hidden="true">View Our Blog</span>
+          </a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('https://images.stockcake.com/public/0/d/3/0d39d2ce-45f6-43e1-b902-dcc7d28f8aa2_large/friends-enjoying-dinner-stockcake.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="https://img.freepik.com/premium-vector/stg-logo-stg-letter-stg-letter-logo-design-initials-stg-logo-linked-with-circle-uppercase-monogram-logo-stg-typography-technology-business-real-estate-brand_229120-77797.jpg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            Restaurant St, Delicious City, Lagos 9578, Nigeria
+          </address>
+
+          <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@grilli.com</a>
+
+          <a href="tel:+88123123456" class="body-4 contact-link">Booking Request : +90-299-59860</a>
+
+          <p class="body-4">
+            Open : 09:00 am - 01:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2024 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/CODEWITHSTG"
+            target="_blank" class="link">codewithstg</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
